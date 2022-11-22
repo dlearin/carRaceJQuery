@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    text-align: center;
+}
+
+.header{
+
+
+}
+
+#RaceTrack {
+    background: url(../img/carretera.jpg) bottom left repeat-x;
+    height: 430px;
+    /*border-right: dashed 10px white;*/
+    box-sizing: border-box;
+    margin-top: -30;
+    /*margin: 40px 0;*/
+ 
+
+  
+}
+
+.header{
+    border-bottom: dashed;
+    background: url(../img/wallpaper.jfif);
+    background-size: contain;
+    
+}
+
+.wallpaper {
+    background: url(../img/wallpaper.jfif);
+    margin-bottom: 300px;
+
+}
+
+/*Dado que vamos a usar jQuery para manipular los coches necesitamos dejar su posicion en relative para poder acceder a la propiedad left*/
+.Car {
+    display: block;
+    position: relative;
+}
+
+/*para poder mover los coches a lo largo de la pista necesitamos alterar la propiedad top, para lo cual hemos fijado antes relative en la posición*/
+
+#Car1 {
+    top: 40px;
+}
+#Car2 {
+    top: 50px;
+}
+#Car3 {
+    top: 50px;
+}
+#Car4 {
+    top: 60px;
+}
+#Car5 {
+    top: 70px;
+}
+#Car6 {
+    top: 80px;
+}
+#Car7 {
+    top: 90px;
+}
+#Car8 {
+    top: 100px;
+}
+#Car9 {
+    top: 100px;
+}
+#RaceInfoCntnr {
+    width: 80%;
+    margin: 40px auto 0;
+    background: #333;
+    height: 200px;
+}
+#RaceInfoCntnr h2 {
+    color: white;
+    text-transform: uppercase;
+    border-bottom: solid 1px white;
+    padding: 20px 0;
+}
+.RaceInfo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    width: 50%;
+    float: left;
+}
+.RaceInfo span {
+    display: block;
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+}
+#RaceInfo1 {
+    color: #77B82f;
+}
+#RaceInfo2 {
+    color: #B82F3E;
+}
+input[type="button"] {
+    background: #77b72f;
+    color: white;
+    padding: 10px 20px;
+    border: solid 1px #444;
+}
+input#Reset {
+    background: #fc3;
+    color: #444;
+}
+.ClearFix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
