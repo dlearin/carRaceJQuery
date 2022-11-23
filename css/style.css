@@ -9,11 +9,6 @@ body {
     text-align: center;
 }
 
-.header{
-
-
-}
-
 #RaceTrack {
     background: url(../img/carretera.jpg) bottom left repeat-x;
     height: 430px;
@@ -27,17 +22,14 @@ body {
 }
 
 .header{
-    border-bottom: dashed;
+    border-bottom: solid;
     background: url(../img/wallpaper.jfif);
     background-size: contain;
+    height: 400px;
     
 }
 
-.wallpaper {
-    background: url(../img/wallpaper.jfif);
-    margin-bottom: 300px;
 
-}
 
 /*Dado que vamos a usar jQuery para manipular los coches necesitamos dejar su posicion en relative para poder acceder a la propiedad left*/
 .Car {
