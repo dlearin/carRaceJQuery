@@ -10,7 +10,7 @@ let nParticipantes = [];
 
 seleccionNParticipantes.addEventListener('change', (e)=>{
 
-    let pistaCarrera = document.querySelector('#RaceTrack');
+    let pistaCarrera = document.querySelector('#PistaDeCarrera');
 
     pistaCarrera.replaceChildren();
 
@@ -46,7 +46,7 @@ $('#Go').click(function() {
         }
     }
     let CarWidth = $('#Car1').width();
-    let RaceTrackWidth = $(window).width() - CarWidth;
+    let AnchoPista = $(window).width() - CarWidth;
     let velocidad1 = Math.floor((Math.random() * 5000) + 1);
     let velocidad2 = Math.floor((Math.random() * 5000) + 1);
     let velocidad3 = Math.floor((Math.random() * 5000) + 1);
@@ -100,39 +100,39 @@ for (i=0;i<cochePosicion.length;i++){
 
 
     $('#Car1').animate({
-        left: RaceTrackWidth
+        left: AnchoPista
     }, velocidad1);
 
     $('#Car2').animate({
-        left: RaceTrackWidth
+        left: AnchoPista
     }, velocidad2,);
 
     $('#Car3').animate({
-        left: RaceTrackWidth
+        left: AnchoPista
     }, velocidad3);
 
     $('#Car4').animate({
-        left: RaceTrackWidth
+        left: AnchoPista
     }, velocidad4);
 
     $('#Car5').animate({
-        left: RaceTrackWidth
+        left: AnchoPista
     }, velocidad5);
 
     $('#Car6').animate({
-        left: RaceTrackWidth
+        left: AnchoPista
     }, velocidad6);
 
     $('#Car7').animate({
-        left: RaceTrackWidth
+        left: AnchoPista
     }, velocidad7);
 
     $('#Car8').animate({
-        left: RaceTrackWidth
+        left: AnchoPista
     }, velocidad8);
 
     $('#Car9').animate({
-        left: RaceTrackWidth
+        left: AnchoPista
     }, velocidad9);
 
 
@@ -140,7 +140,7 @@ for (i=0;i<cochePosicion.length;i++){
   
     $('#Reset').click(function() {
         $('.Car').css('left', '0');
-        $('.RaceInfo span').text("");
+        $('#ResultadosDeCarrera p').text("");
         nParticipantes=[];
     });
 

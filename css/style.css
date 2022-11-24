@@ -9,7 +9,7 @@ body {
     text-align: center;
 }
 
-#RaceTrack {
+#PistaDeCarrera {
     background: url(../img/carretera.jpg) bottom left repeat-x;
     height: 430px;
     /*border-right: dashed 10px white;*/
@@ -109,7 +109,6 @@ input[type="button"] {
 
 #go {
     margin-top: -115px;
-    /*margin-left: -180px;*/
     margin-right: 600px;
     padding-left: 80px;
     padding-right: 80px;
@@ -118,7 +117,6 @@ input[type="button"] {
 
 #reset {
     margin-top: -87px;
-    /*margin-left: -180px;*/
     margin-right: 600px;
     padding-left: 80px;
     padding-right: 80px;
