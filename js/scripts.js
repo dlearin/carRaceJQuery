@@ -1,5 +1,3 @@
-//JavaScript Document
-
 
 let seleccionNParticipantes = document.querySelector('#coches');
 
@@ -38,13 +36,8 @@ seleccionNParticipantes.addEventListener('change', (e)=>{
 })
 
 $('#Start').click(function() {
-    function CheckIfComplete() {
-        if (isComplete == false) {
-            isComplete == true;
-        } else {
-            place = 'Second';
-        }
-    }
+   
+    $("#Reset").show();
     let CarWidth = $('#Car1').width();
     let AnchoPista = $(window).width() - CarWidth;
     let velocidad1 = Math.floor((Math.random() * 5000) + 1);
@@ -56,8 +49,7 @@ $('#Start').click(function() {
     let velocidad7 = Math.floor((Math.random() * 5000) + 1);
     let velocidad8 = Math.floor((Math.random() * 5000) + 1);
     let velocidad9 = Math.floor((Math.random() * 5000) + 1);
-    let isComplete = false;
-    let Place = 'First';
+
 
 /**
  * Creo un array nuevo para almacenar los datos obtenidos en cuanto a velocidades

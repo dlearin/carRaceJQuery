@@ -1,9 +1,10 @@
 @charset "utf-8";
-/* CSS Document */
+@import url('https://fonts.cdnfonts.com/css/common-pixel');
 
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Common Pixel', sans-serif;
 }
 body {
     text-align: center;
@@ -71,8 +72,10 @@ body {
 #InfoCarrera {
     width: 80%;
     margin: 40px auto 0;
-    background: #333;
-    height: 200px;
+    background: #966F33;
+    height: 230px;
+    border-radius: 25px;
+
 }
 #InfoCarrera h2 {
     color: white;
@@ -87,24 +90,15 @@ body {
     width: 50%;
     float: left;
 }
-.InfoCarrera span {
-    display: block;
-    font-weight: normal;
-    font-size: 18px;
-    color: white;
-}
-#InfoCarrera1 {
-    color: #77B82f;
-}
-#InfoCarrera2 {
-    color: #B82F3E;
-}
 
 input[type="button"] {
     background: transparent;
-    color: white;
+    color: black;
     padding: 10px 50px;
-    border: solid 1px #444;
+    border: solid 1px transparent;
+font-size: 20px;
+
+                                                
 }
 
 #Start {
@@ -121,16 +115,18 @@ input[type="button"] {
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 0px;
+    display: none;
+
 }
 
 .nParticipantes{
     margin-top: -510px;
-    margin-left: -470px;
+    margin-left: -580px;
 }
 
 input#Reset {
     background: transparent;
-    color: #444;
+    color: black;
 }
 #InfoCarrera:after {
     content: "";
@@ -144,6 +140,6 @@ width: 300px;
 
 margin-left: 900px;
 
-margin-top: -150px;
+margin-top: -180px;
 
 }
