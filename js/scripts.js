@@ -37,7 +37,7 @@ seleccionNParticipantes.addEventListener('change', (e)=>{
 
 })
 
-$('#Go').click(function() {
+$('#Start').click(function() {
     function CheckIfComplete() {
         if (isComplete == false) {
             isComplete == true;
