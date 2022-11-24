@@ -15,21 +15,23 @@ body {
     /*border-right: dashed 10px white;*/
     box-sizing: border-box;
     margin-top: -30;
-    /*margin: 40px 0;*/
- 
-
-  
+    /*margin: 40px 0;*/ 
 }
 
 .header{
     border-bottom: solid;
     background: url(../img/wallpaper.jfif);
     background-size: contain;
-    height: 400px;
-    
+    height: 350px;
 }
 
+.header > img {
+    height: 150px;
+    margin-top: 150px;
+    margin-right: 600px;
+    /*position: relative;*/
 
+}
 
 /*Dado que vamos a usar jQuery para manipular los coches necesitamos dejar su posicion en relative para poder acceder a la propiedad left*/
 .Car {
@@ -40,31 +42,31 @@ body {
 /*para poder mover los coches a lo largo de la pista necesitamos alterar la propiedad top, para lo cual hemos fijado antes relative en la posición*/
 
 #Car1 {
-    top: 40px;
-}
-#Car2 {
-    top: 50px;
-}
-#Car3 {
-    top: 50px;
-}
-#Car4 {
     top: 60px;
 }
-#Car5 {
+#Car2 {
     top: 70px;
 }
-#Car6 {
+#Car3 {
     top: 80px;
 }
-#Car7 {
+#Car4 {
+    top: 85px;
+}
+#Car5 {
     top: 90px;
 }
-#Car8 {
+#Car6 {
     top: 100px;
 }
+#Car7 {
+    top: 110px;
+}
+#Car8 {
+    top: 120px;
+}
 #Car9 {
-    top: 100px;
+    top: 130px;
 }
 #RaceInfoCntnr {
     width: 80%;
@@ -97,14 +99,39 @@ body {
 #RaceInfo2 {
     color: #B82F3E;
 }
+
 input[type="button"] {
-    background: #77b72f;
+    background: transparent;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 50px;
     border: solid 1px #444;
 }
+
+#go {
+    margin-top: -115px;
+    /*margin-left: -180px;*/
+    margin-right: 600px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 0px;
+}
+
+#reset {
+    margin-top: -87px;
+    /*margin-left: -180px;*/
+    margin-right: 600px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 0px;
+}
+
+.nParticipantes{
+    margin-top: -510px;
+    margin-left: -470px;
+}
+
 input#Reset {
-    background: #fc3;
+    background: transparent;
     color: #444;
 }
 .ClearFix:after {
