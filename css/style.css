@@ -132,7 +132,7 @@ input#Reset {
     background: transparent;
     color: #444;
 }
-.ClearFix:after {
+#InfoCarrera:after {
     content: "";
     display: table;
     clear: both;

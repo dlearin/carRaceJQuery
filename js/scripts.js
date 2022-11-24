@@ -91,7 +91,7 @@ $('#Start').click(function() {
     cochePosicion.sort(function(a,b) {return a.tiempo - b.tiempo});
 
 for (i=0;i<cochePosicion.length;i++){
-    $("p").prepend(cochePosicion[i].name+'\n');
+    $("p").prepend("Posición nº "+ (i+1) +": "+ cochePosicion[i].name+'|' +"\n");
 };
 
 
