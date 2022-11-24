@@ -68,35 +68,35 @@ body {
 #Car9 {
     top: 130px;
 }
-#RaceInfoCntnr {
+#InfoCarrera {
     width: 80%;
     margin: 40px auto 0;
     background: #333;
     height: 200px;
 }
-#RaceInfoCntnr h2 {
+#InfoCarrera h2 {
     color: white;
     text-transform: uppercase;
     border-bottom: solid 1px white;
     padding: 20px 0;
 }
-.RaceInfo {
+.InfoCarrera {
     font-size: 24px;
     font-weight: bold;
     color: white;
     width: 50%;
     float: left;
 }
-.RaceInfo span {
+.InfoCarrera span {
     display: block;
     font-weight: normal;
     font-size: 18px;
     color: white;
 }
-#RaceInfo1 {
+#InfoCarrera1 {
     color: #77B82f;
 }
-#RaceInfo2 {
+#InfoCarrera2 {
     color: #B82F3E;
 }
 
