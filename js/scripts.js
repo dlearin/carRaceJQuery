@@ -37,9 +37,6 @@ seleccionNParticipantes.addEventListener('change', (e)=>{
 
 })
 
-
-
-
 $('#Go').click(function() {
     function CheckIfComplete() {
         if (isComplete == false) {
@@ -93,74 +90,53 @@ $('#Go').click(function() {
     
     cochePosicion.sort(function(a,b) {return a.tiempo - b.tiempo});
 
-      
+for (i=0;i<cochePosicion.length;i++){
+    $("p").prepend(cochePosicion[i].name+'\n');
+};
+
+
     console.log(cochePosicion);
 
 
 
     $('#Car1').animate({
         left: RaceTrackWidth
-    }, velocidad1, function() {
-        CheckIfComplete();
-        $('#RaceInfo1 span').text('Finished in ' + Place + ' place & Clocked in at ' + velocidad1 + ' ms');
-    });
+    }, velocidad1);
 
     $('#Car2').animate({
         left: RaceTrackWidth
-    }, velocidad2, function() {
-        CheckIfComplete();
-        $('#RaceInfo2 span').text('Finished in ' + Place + ' place & Clocked in at ' + velocidad2 + ' ms');
-    });
+    }, velocidad2,);
 
-  $('#Car3').animate({
+    $('#Car3').animate({
         left: RaceTrackWidth
-    }, velocidad3, function() {
-        CheckIfComplete();
-        $('#RaceInfo3 span').text('Finished in ' + Place + ' place & Clocked in at ' + velocidad3 + ' ms');
-    });
+    }, velocidad3);
 
     $('#Car4').animate({
         left: RaceTrackWidth
-    }, velocidad4, function() {
-        CheckIfComplete();
-        $('#RaceInfo4 span').text('Finished in ' + Place + ' place & Clocked in at ' + velocidad3 + ' ms');
-    });
+    }, velocidad4);
 
     $('#Car5').animate({
         left: RaceTrackWidth
-    }, velocidad5, function() {
-        CheckIfComplete();
-        $('#RaceInfo3 span').text('Finished in ' + Place + ' place & Clocked in at ' + velocidad3 + ' ms');
-    });
+    }, velocidad5);
 
     $('#Car6').animate({
         left: RaceTrackWidth
-    }, velocidad6, function() {
-        CheckIfComplete();
-        $('#RaceInfo3 span').text('Finished in ' + Place + ' place & Clocked in at ' + velocidad3 + ' ms');
-    });
+    }, velocidad6);
 
     $('#Car7').animate({
         left: RaceTrackWidth
-    }, velocidad7, function() {
-        CheckIfComplete();
-        $('#RaceInfo3 span').text('Finished in ' + Place + ' place & Clocked in at ' + velocidad3 + ' ms');
-    });
+    }, velocidad7);
 
     $('#Car8').animate({
         left: RaceTrackWidth
-    }, velocidad8, function() {
-        CheckIfComplete();
-        $('#RaceInfo3 span').text('Finished in ' + Place + ' place & Clocked in at ' + velocidad3 + ' ms');
-    });
+    }, velocidad8);
 
     $('#Car9').animate({
         left: RaceTrackWidth
-    }, velocidad9, function() {
-        CheckIfComplete();
-        $('#RaceInfo3 span').text('Finished in ' + Place + ' place & Clocked in at ' + velocidad3 + ' ms');
-    });
+    }, velocidad9);
 
+
+     
   
     $('#Reset').click(function() {
         $('.Car').css('left', '0');
